@@ -16,7 +16,7 @@ def get_char_count(text):
 def sort_characters(char_dict):
     sorted_list = []
     for char, count in char_dict.items():
-        if char.isalpha():  # Skip non-letter characters
+        if char.isalpha():  
             sorted_list.append({"char": char, "num": count})
     sorted_list.sort(key=lambda x: x["num"], reverse=True)
     return sorted_list
